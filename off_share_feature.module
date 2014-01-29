@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the off_share_feature feature.
+ */
+
+include_once 'off_share_feature.features.inc';
