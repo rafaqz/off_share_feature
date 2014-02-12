@@ -76,6 +76,20 @@ function off_share_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_description_news';
+  $strongarm->value = '[node:body]';
+  $export['social_share_description_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_description_organisation';
+  $strongarm->value = '[node:body]';
+  $export['social_share_description_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'social_share_description_project';
   $strongarm->value = '[node:body]';
   $export['social_share_description_project'] = $strongarm;
@@ -135,6 +149,13 @@ function off_share_feature_strongarm() {
   $strongarm->name = 'social_share_enabled_knowledge_object';
   $strongarm->value = 1;
   $export['social_share_enabled_knowledge_object'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_enabled_news';
+  $strongarm->value = 1;
+  $export['social_share_enabled_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -205,6 +226,20 @@ function off_share_feature_strongarm() {
   $strongarm->name = 'social_share_image_knowledge_object';
   $strongarm->value = '';
   $export['social_share_image_knowledge_object'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_image_news';
+  $strongarm->value = '';
+  $export['social_share_image_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_image_organisation';
+  $strongarm->value = '';
+  $export['social_share_image_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -316,6 +351,24 @@ function off_share_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_networks_news';
+  $strongarm->value = array(
+    0 => 'facebook',
+    1 => 'googleplus',
+    2 => 'twitter',
+  );
+  $export['social_share_networks_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_networks_organisation';
+  $strongarm->value = array();
+  $export['social_share_networks_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'social_share_networks_project';
   $strongarm->value = array(
     0 => 'facebook',
@@ -390,6 +443,20 @@ function off_share_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_show_label_news';
+  $strongarm->value = 0;
+  $export['social_share_show_label_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_show_label_organisation';
+  $strongarm->value = 0;
+  $export['social_share_show_label_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'social_share_show_label_project';
   $strongarm->value = 0;
   $export['social_share_show_label_project'] = $strongarm;
@@ -453,6 +520,20 @@ function off_share_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_theme_news';
+  $strongarm->value = 'social_share_link';
+  $export['social_share_theme_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_theme_organisation';
+  $strongarm->value = 'social_share_link';
+  $export['social_share_theme_organisation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'social_share_theme_project';
   $strongarm->value = 'social_share_link';
   $export['social_share_theme_project'] = $strongarm;
@@ -512,6 +593,20 @@ function off_share_feature_strongarm() {
   $strongarm->name = 'social_share_title_knowledge_object';
   $strongarm->value = '[node:title]';
   $export['social_share_title_knowledge_object'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_title_news';
+  $strongarm->value = '[node:title]';
+  $export['social_share_title_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_title_organisation';
+  $strongarm->value = '[node:title]';
+  $export['social_share_title_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -582,6 +677,20 @@ function off_share_feature_strongarm() {
   $strongarm->name = 'social_share_url_knowledge_object';
   $strongarm->value = '[node:url:absolute]';
   $export['social_share_url_knowledge_object'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_url_news';
+  $strongarm->value = '[node:url:absolute]';
+  $export['social_share_url_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'social_share_url_organisation';
+  $strongarm->value = '[node:url:absolute]';
+  $export['social_share_url_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
