@@ -1,6 +1,6 @@
-name = Off Share Feature
+name = Share Feature
 core = 7.x
-package = Collabco
+package = Features
 dependencies[] = ctools
 dependencies[] = social_share
 dependencies[] = strongarm
