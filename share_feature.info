@@ -99,4 +99,3 @@ features[variable][] = social_share_url_knowledge_object
 features[variable][] = social_share_url_news
 features[variable][] = social_share_url_organisation
 features[variable][] = social_share_url_project
-project path = sites/all/modules/features
